@@ -22,6 +22,10 @@ app.use(cors({
     credentials:true
   }))
 
+  app.get('/getting', (req, res)=>{
+    res.send("This is getting something.....")
+  })
+
 app.use('/', AuthRoutes)
 app.use('/',AdminRoutes)
 
